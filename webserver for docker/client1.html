@@ -1,0 +1,29 @@
+
+<script>
+    function client(){
+    var i = document.getElementById("in").value
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET","http://192.168.1.10/cgi-bin/app.py?input=" + i, true);
+    xhr.send();
+    xhr.onload = function(){
+        var o = xhr.responseText;
+        document.getElementById("d").innerHTML = o;
+    }
+}
+</script>
+<html>
+
+    <Body background= "7-2.jpg"> 
+        <center><h2 style="font-family:Papyrus;">Want to swim in the ocean of docker container technology?</h2>
+        <h2 style="font-family:Papyrus;">C'mon..Enter any linux or docker command and know what they are used for</h2><br>
+        <form>
+            <label for="in">Enter the command below:</label><br>
+            <input type="text" id="in" size="50" style = "height:25px" ><input onclick = "client()" type="button" value="Run" class="right" style = "height:25px"><br>
+          </form>
+          <pre>
+            <div id = "d">Output</div>
+            </pre>
+    </center>
+
+    </Body>
+</html>
