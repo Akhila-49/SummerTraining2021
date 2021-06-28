@@ -1,0 +1,83 @@
+body
+{
+        /*background-image: linear-gradient(#89abe3ff,#addfde); */
+        background-image: linear-gradient(#000,#303842,#89abe3ff); 
+
+        font-family: Trebuchet MS;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 2%;
+        color: #addfde;
+}
+/*
+main
+{
+
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 2%;
+}
+*/
+input#command
+{
+        width: 60%;
+        padding: 0.7%;
+        border-radius: 15px;
+        border-color: #fcf6f5ff;
+        font-size: 100%;
+}
+
+button
+{
+        background-color: #fcf6f5ff;
+        font-family: Trebuchet MS;
+        padding-top:  0.8%;
+        padding-bottom: 0.8%;
+        padding-right: 0.8%;
+        padding-left: 0.8%;
+        border-radius: 5px;
+        font-size: 100%;
+        border-color: #89abe3ff;
+}
+
+button:hover
+{
+        font-style: italic;
+}
+
+input#command:focus
+{
+        border-radius: 6px;
+        border-color: #fcf6f5ff;
+}
+
+header
+{
+        padding-top: 1px;
+}
+
+section#s1
+{
+        font-family: Courier New;
+        font-weight: bold;
+        font-size: 120%;
+}
+
+div#menu1
+{
+        float:left;
+        width:30%;
+        height:50%;
+        padding: 0.5%;
+        text-align: center;
+        margin: 0.5%;
+        border: 3px solid #28242f;
+        border-radius: 2rem;
+        box-shadow: -1rem 0 3rem #000;
+
+}
+
+div#menu1:hover 
+{ 
+        transform: scale(1.05); 
+}
