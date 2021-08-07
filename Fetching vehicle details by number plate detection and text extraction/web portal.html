@@ -1,0 +1,47 @@
+<script>
+        function lw()
+        {
+                var i = document.getElementById("in1").value
+		var xhr=new XMLHttpRequest(); 
+                xhr.open("GET","http://192.168.0.106/cgi-bin/out.py?x="+i,true)
+                xhr.send()
+                xhr.onload=function()
+                {
+                        var output=xhr.responseText;
+                        document.getElementById("d1").innerHTML=output
+                }
+        }
+
+</script>
+<html>
+<head>
+    <title>web portal</title>
+    <style>
+            body,html {
+                height:100%;
+                margin: 0;
+                }
+        .bg {
+                background-image:url("https://cars.usnews.com/images/article/202002/128389/1_title_2020_kia_optima.jpg");
+                height:100%;
+                background-position:center;
+                background-repeat:no-repeat;
+                background-size:cover;
+                }
+
+        </style>
+</head>
+<body style="background-color:lightgrey;">
+<div class="bg">
+<center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<label style="font-size:2vw;"><b>number plate value</b></label><input style="font-size:1.5vw;" align="middle" id="in1"/>
+</br>
+<pre>
+<div id="d1" class="f" style="font-size:2vw;">output</div>
+</pre>
+<button style="font-size:1.5vw;" onclick="lw()">Get Details</button>
+</center>
+</div>
+</body>
+</html>
